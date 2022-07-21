@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*========== Navigation Starts Here ==========*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+.logo img{
+    width: 200px;
+    margin: 20px;
+    filter: saturate(3);
+}
+.nav-links{
+    display: flex;
+    margin: 25px;
+    gap: 50px;
+}
+.nav-items a{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+} 
+a:hover{
+    color: rgb(255, 255, 255);
+    /* box-shadow: 0px 0px 10px whitesmoke; */
+    transition: 0.5s;
+    background-color: rgb(236, 41, 41);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/*========== Header SEction Starts ==========*/
+header{
+    width: 100%;
+    height: 70vh;
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+header img{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    /* margin-top: 70px; */
+    /* object-fit: cover; */
+    /* opacity: 0.8; */
+    filter: saturate(1);
+    z-index: -1;
+}
+header .tag{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left:50%;
+    font-size: 1.4rem;
+    transform: translate(-50%,-50%);
+    animation-duration: 2s;
+    /* text-shadow: 0 0 5px 5px rgb(238, 236, 230); */
+    /* z-index: -1; */
+}
+header .tag h1{
+    font-weight: 900;
+    background: linear-gradient(to right, rgb(0, 0, 0),rgb(0, 174, 255), rgb(255, 1, 1));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-color: rgb(203, 233, 240);  */
+}
+.lyrics{
+    color: rgb(1, 1, 1);
+    position: absolute;
+    /* text-shadow: 0 0 20px rgb(255, 252, 252); */
+    top: 35%;
+    left:50%;
+    z-index: -1;
+    font-size: 1.4rem;
+    transform: translate(-50%,-50%);
+    animation-duration: 2s;
+}
+header .matter{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    font-size: 1.2rem;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    /* text-shadow: 0 0 10px black; */
+}
+.search{
+    position: absolute;
+    top: 57%;
+    left:64%;
+    transform: translate(-50%,-50%);
+    /* z-index: -1; */
+}
+.text{
+    width: 300px;
+    height: 5px;
+    border-radius: 10px;
+    padding: 15px;
+}
+.search .btn{
+    padding: 5px;
+    border-radius: 10px;
+    color: crimson;
+}
+.btn:hover{
+    box-shadow: 0 0 10px rgb(253, 250, 250) !important;
+    cursor: pointer !important; 
+    background-color: crimson;
+    color: white;
+}
+
+/* ============ videos Section ========== */
+.explore{
+    font-size:1.2rem;
+    margin-left: 20px;
+}
+.videos{
+    margin-top: 10px;
+    /* background-color: rgb(236, 233, 229); */
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    /* z-index: -1; */
+    /* justify-content: space-around; */
+}
+
+/* ============= cards SEction Starts ============ */
+.cards{
+    background-image:linear-gradient( cyan , rgb(50, 219, 157));
+    height: 45vh;
+}
+.impression{
+    /* margin-top: 50px; */
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.flex-card{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    gap: 10px;
+    /* background-color: rgb(215, 96, 16); */
+}
+.card-items{
+    width: 200px;
+    height: 150px;
+    position: relative;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    gap: 100px;
+    background-color: rgb(215, 96, 16);
+    /* overflow: hidden; */
+}
+.card-items img{
+    /* position: absolute; */
+    /* object-fit: cover; */
+    width: 100%;
+}
+.card-items:hover{
+    height: 138px;
+    background-color: aliceblue;
+    transition: 0.5s;
+    /* box-shadow: -10px -10px 10px solid white; */
+}
+/* .card-items p{
+    position: absolute;
+padding-bottom: 20px;
+padding-left: 10px;
+bottom: -25px;
+left: 20px;
+text-align: center;
+} */
+.card-items .break{
+    width: 100%;
+    background-image: linear-gradient(black , rgb(137, 128, 128));
+    height: 38px;
+    bottom: 0px;
+    position: absolute;
+}
+.break p{
+    color: white;
+    position: relative;
+    text-align: center;
+    bottom: 5px;
+    font-weight: bolder;
+}
+
+/* ============ Name section Starts ========== */
+.post{
+    /* width: 100%; */
+    height: 90vh;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-shadow: 0px 0px 10px black;
+    background-image:linear-gradient( rgb(37, 231, 241), whitesmoke);
+    /* border-top: 1px solid rgb(255, 255, 255); */
+}
+.post p{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sorry{
+    display: flex;
+    justify-content: center;
+}
+.sorry span{
+    font-size: 2rem;
+    margin-right: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.post .time{
+    font-size: 1rem;
+}
+form{
+    width: 50%;
+    margin-left: 25%;
+    /* padding: 90px; */
+}
+fieldset{
+    padding: 30px;
+}
+#fixed{
+    width: 300px;
+    height: 40px;
+}
+.submit{
+   margin-left: 50%;
+   width: 80px;
+   letter-spacing: 1.5px;
+   font-weight: 600;
+   border-radius: 5px;
+   color: white;
+   background-color: crimson;
+}
+.submit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+.about{
+    margin-top: 50px;
+    margin-left: 180px;
+    margin-right: 180px;
+    position: relative;
+}
+.about .siri{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.about .siri .para{
+    margin-top: -20px;
+}
+.about .chandra{
+    padding-top: 20PX;
+    margin-top: 50px;
+    border-top: 2px solid aqua;
+    display: flex;
+    gap: 40px;
+}
+.chandra img{
+    margin-top: 30px;
+}
+.chandra video{
+    margin-top: 30px;
+}
+
+/* =========== Footer Section Strarts */
+footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 60vh;
+   
+}
+footer .img img{
+    position: relative;
+    /* z-index: -1; */
+    /* width: 100%; */
+}
+.content{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    position: relative;
+}
+.content-1{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: end;
+    gap: 40px;
+    z-index: 1;
+    position: relative;
+    margin: 0px 70px;
+}
+.content .left{
+    width: 400px;
+    position: absolute;
+    height: 300px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0px 70px;
+    color: white;
+    bottom: 100px;
+}
+.content .content-1 .col{
+    width: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
+    bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    /* border: 1px solid salmon; */
+    height: 200px;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+footer{
+    position: relative;
+}
+footer .img img{
+    position: absolute;
+    width: 100%;
+    /* z-index: -1; */
+}
+footer .left-text{
+    margin: 30px;
+   position: absolute;
+   /* border:  2px solid rgb(243, 157, 157); */
+   width: 600px;
+   height: 350px;
+   /* box-shadow: 0 0 10px rgb(72, 69, 69); */
+}
+.flex-col{
+    margin-right: 100px;
+    left: 870px;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    /* margin-left: 150px; */
+}
+.flex-col .column{
+    margin: 20px;
+    /* position: absolute; */
+    height: 300px;
+    width: 150px;
+    /* border: 2px solid white; */
+}
+.flex-col .column p{
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    text-shadow: 2px 2px 50px black;
+}
+footer .left-text p{
+    color: white;
+    position: absolute;
+    font-size: 1.4rem;
+    padding-left: 30px;
+    text-align: center;
+    font-family: cursive;
+    margin-left: 60px;
+}
+footer .left-text h2{
+    color: white;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 90px;
+}
+footer .left-text .logo img{
+    width: 100px;
+    height: 100px;
+}
+footer .left-text .logo{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+footer .left-text .logo img:hover{
+    width: 110px;
+    height: 110px;
+    transition: 0.5s !important;
+}
+.copy{
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 600px;
+}
+.flexicons{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 86%;
+    left: 28%;
+}
+.fa{
+    color: white;
+    float: left;
+}
+.icons{
+    font-size: 30px;
+}
+.icons:hover{
+    cursor: pointer;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
