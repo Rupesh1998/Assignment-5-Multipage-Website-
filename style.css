@@ -27,13 +27,32 @@ body{
     padding: 5px;
     color: rgb(255, 255, 255);
 } 
-a:hover{
-    color: rgb(255, 255, 255);
+.navbar .logo::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    bottom: 20px;
+    margin-left: 59px;
+    background-color: #fba403;
+    transition: 0.6s;
+}
+.navbar .logo:hover::after{
+    width: 153px;
+}
+.nav-items:hover{
+    color: rgb(252, 251, 251);
+    padding: 2px;
     /* box-shadow: 0px 0px 10px whitesmoke; */
     transition: 0.5s;
-    background-color: rgb(236, 41, 41);
+    list-style-type: none;
+    background-color: rgb(250, 160, 5);
     border-radius: 20px;
     font-weight: bold;
+}
+.nav-items a:hover{
+    color: black;
 }
 
 /*========== Header SEction Starts ==========*/
